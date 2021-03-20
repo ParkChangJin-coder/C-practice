@@ -10,6 +10,6 @@ int main() {
   scanf("%f", &height);
 
   int bmi = weight / (height * height);
-  printf("BMI 지수는 %d 입니다! 이 돼지놈아", bmi); 
+  printf("BMI 지수는 %d 입니다!", bmi); 
 	
 }
