@@ -16,5 +16,5 @@ int main() {
 
   printf("this is practice");
   */
-  printf("this is practice on ipad")
+  printf("this is practice on ipad");
 }
