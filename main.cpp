@@ -1,4 +1,4 @@
-#include <iostream>
+#include <stdio.h>
 
 int main() {
   //BMI : 몸부게 / 키(m) * 키(m))
@@ -10,7 +10,7 @@ int main() {
   scanf("%f", &height);
 
   int bmi = weight / (height * height);
-  printf("BMI 지수는 %d 입니다!", bmi); 
-  printf("this is test")
-	
+  printf("BMI 지수는 %d 입니다! 이 돼지놈아", bmi); 
+
+  printf("this is practice");
 }
