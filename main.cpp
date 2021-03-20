@@ -11,5 +11,6 @@ int main() {
 
   int bmi = weight / (height * height);
   printf("BMI 지수는 %d 입니다!", bmi); 
+  printf("this is test")
 	
 }
