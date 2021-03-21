@@ -173,7 +173,7 @@ int main() {
   */
   
   //for(;;){} : for 무한반복
-  
+  printf("settings lay out");
   
   return 0;
   
