@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main(){
+  /*
+  int count = 0;
+  int sum = 0;
+  int number = 0;
+  while(count < 10){
+    printf("입력: ");
+    scanf("%d", &number);
+    sum += number;
+    count++;
+  }
+  int result = sum / 10;
+  printf("result = %d\n", result);
+  
+  int inputNumber = 0;
+  printf("input : ");
+  scanf("%d", &inputNumber);
+  for(int i=1; i<=inputNumber; i++){
+    if(inputNumber % i == 0){
+      printf("%d ", i);
+    }
+  }
+  */
+  
+  
+  return 0;
+}

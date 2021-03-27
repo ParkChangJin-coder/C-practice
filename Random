@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h> //header file
+
+int main(){
+  
+  srand(time(NULL));//랜덤함수의 seed값 초기화
+  
+  int randomNumber =  0;
+  randomNumber = rand()%40; // +1; 1 ~ 40 까지
+  printf("result = %d\n", randomNumber);
+  
+  //up down game
+  while(true){
+    int inputNumber = 0;
+    printf("input :");
+    scanf("%d", &inputNumber);
+    if(inputNumber > randomNumber){
+      printf("DOWN!\n");
+    }else if(inputNumber < randomNumber){
+      printf("UP!\n");
+    }else if(inputNumber == randomNumber){
+      printf("you got it!");
+      break;
+    }
+  }
+  
+  
+  return 0;
+}
