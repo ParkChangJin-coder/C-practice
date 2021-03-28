@@ -1,0 +1,30 @@
+#include <stdio.h>
+//함수선언
+int add(int data1, int data2);
+
+
+
+int main(){
+  //function 
+  int num1 = 0;
+  int num2 = 0;
+  
+  printf("first number : ");
+  scanf("%d", &num1);
+  printf("second number : ");
+  scanf("%d", &num2);
+  
+  //int result = num1 + num2;
+  //함수호출
+  int result = add(num1, num2);
+  printf("result = %d\n", result);
+  
+  return 0;
+}
+
+//함수정의
+int add(int data1, int data2){
+  int result = data1 + data2;
+  //return
+  return result;
+ 

@@ -1,0 +1,64 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#define MAX_SIZE 10 //고정값 선언
+
+
+int main(){
+/*
+//array
+//1st problem
+//숫자를 입력받아 자리수의 합을 구한다
+// 177 => 1 + 7 + 7
+int inputNumber = 0;
+printf("input : ");
+scanf("%d", &inputNumber);
+int status = 1;
+int sum = 0;
+while(status){
+  if(inputNumber < 10){
+    status = 0;
+  }
+  sum += inputNumber % 10;
+  inputNumber /= 10;
+}
+printf("result = %d", sum);
+
+//2nd problem
+int numbers[MAX_SIZE] = {0,};
+for (int i = 0; i < MAX_SIZE; i++){
+  inputNumber = 0;
+  printf("%d번째정수입력 : ", i +1);
+  scanf("%d", &inputNumber);
+  
+  if(inputNumber == 0){
+    
+  }
+}
+*/
+
+  int array[MAX_SIZE] = {0,};
+  srand(time(NULL));//랜덤함수의 seed값 초기화
+  
+  for(int i = 0; i < 10; i++){
+    int randomNumber =  0;
+    randomNumber = rand()%10+1;
+    /*
+    for (int i = 0; i < 10; i++){
+      for (int j = i; j < 10; j++){
+        //배열 정렬 swap
+        if(randomNumber[i] > randomNumber[j]){
+          int temp = randomNumber[i];
+          randomNumber[i] = randomNumber[j];
+          randomNumber[j] = temp;
+        }
+      }
+    }
+    */
+    array[i] = randomNumber;
+    printf("array[%d] = %d\n", i, randomNumber);
+  }
+  
+
+  return 0;
+}ㅎ갸ㅜ

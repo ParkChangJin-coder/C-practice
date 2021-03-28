@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int max(int data1, int data2);
+void devider(void);
+
+int main(){
+  devider();
+  max(3,6);
+  max(7,2);
+  devider();
+  
+  return 0;
+}
+
+void devider(){
+  printf("====================\n");
+}
+
+
+int max(int data1, int data2){
+  if (data1 > data2){
+    printf("%d\n",data1);
+    return data1;
+  }else{
+    printf("%d\n", data2);
+    return data2;
+  }
+  
+
+}

@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+//평균을 구하는 함수
+int sum(int scores[], int size);
+int average(int scores[], int size);
+
+int main(){
+  
+  int scores[10] = {95,23,65,77,39,26,54,12,9,34};
+  int sumResult = sum(scores, 10);
+  printf("sum = %d\n", sumResult);
+  
+  int avgResult = average(scores, 10);
+  printf("average = %d\n", avgResult);
+  
+  return 0;
+}
+
+int sum(int scores[], int size) {
+  int result = 0;
+  for (int i = 0; i < size; i++){
+    result += scores[i];
+  }
+  return result;
+}
+
+int average(int scores[], int size){
+  int sumResult = sum(scores, size);
+  int avgResult = sumResult / size;
+  return avgResult;
+}

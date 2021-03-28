@@ -1,0 +1,89 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#define MAX_SIZE 10
+
+int main(){
+  /*
+  //소문자 단어 => 대문자
+  char inputWord[50] = {"\0",};
+  printf("input word :");
+  scanf("%s", inputWord);
+  for(int i = 0;; i++){
+    if (inputWord[i] == '\0'){
+      break;
+    }
+    inputWord[i] -= ('a' - 'A');  
+  }
+  printf("%s", inputWord);
+  
+  
+  //문자열 비교 복사
+  //<string.h>
+  char word1[10] = "hello";
+  char word2[10] = "good";
+  char word3[10] = "hello";
+  char word4[10];
+  char word5[50] = "world";
+  
+  printf("%s and %s equal? %d\n", word1, word2, strcmp(word1, word2));
+  printf("%s and %s is equal? %d\n", word1, word3, strcmp(word1, word3));
+  //strcmp (str1, str2) 문자열비교
+  // 0: 같을때, 1: str1>str2, -1: str1<str2
+  
+  //strcpy(str1, str2) copy
+  strcpy(word4, word1);
+  printf("copied : %s\n", word4);
+  
+  //strlen = length
+  printf("word1 length : %d\n", strlen(word1));
+  
+  //strcat(str1, str2) = stick
+  strcat(word5, word1);
+  printf("sticked : %s\n", word5);
+  
+
+  char word[50] = {'\0',};
+  printf("input : ");
+  scanf("%[^\n]s", word); //공백을 포함한 문자열 입력시 [^\n] 삽입
+  printf("%s\n", word);
+  */
+  
+  
+  /*
+  //ㅁ문자열 초기화도 동일
+  //{\0, }  문자열 초기화
+  char word[MAX_SIZE] = {'\0',};
+  char word2[MAX_SIZE] = "world!";
+  printf("result : %s\n", word2);
+  char word3[MAX_SIZE];
+  word3[0] = 'h';
+  printf("result3 = %s", word3);
+  */
+  
+  //단어 입력
+  //회문인지 판단 ex) level
+  
+  char inputWord[50] = {'\0',}; 
+  
+  printf("input word :");
+  scanf("%s", inputWord);
+  
+  int wordLength = strlen(inputWord);
+  int status = 1;
+  for(int i = 0; i<wordLength/2; i++){
+    if (inputWord[i] != inputWord[wordLength - 1 -i]){
+      status = 0;
+      break;
+    }
+    
+  }
+  if(status){
+    printf("회문입니다");
+  }else{
+    printf("아닙니다");
+  }
+  printf("%s", inputWord);
+  
+  return 0;
+}

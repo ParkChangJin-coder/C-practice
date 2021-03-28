@@ -1,0 +1,47 @@
+#include <stdio.h>
+#define PI 3.14159 //매크로상수
+
+//func name ; circleRoumd
+//type : float
+//parameter : int type radius
+float circleRound(int radius);
+
+//원의 넓이를 구하는 경우
+//함수명:circleArea
+//type : float
+//parameter : int type radius
+float circleArea(int radius);
+
+//사각형
+void squareRound(int height, int width);
+int squareArea(void);
+
+void devider(void);
+
+int main(){
+  devider();
+  float circleRoundResult = circleRound(5);
+  printf("원의 둘레 : %f\n", circleRoundResult);
+  devider();
+  float circleAreaResult = circleArea(5);
+  printf("원의 넓이 : %f\n", circleAreaResult);
+  devider();
+  
+  
+  
+  return 0;
+}
+//함수정의
+float circleRound(int radius){
+  float result = 2 * radius * PI;
+  return result;
+}
+float circleArea(int radius){
+ return radius * radius * PI; 
+}
+
+
+
+void devider(){
+  printf("======================\n");
+}
