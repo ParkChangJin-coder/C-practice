@@ -22,21 +22,5 @@ int main(){
     printf("\n");
   }
   */
-  //55 table, random number, biggest number print
-  
-  int table[5][5] = {0,};
-  srand(time(NULL));
-  int randomNumber =  0;
-  //randomNumber = rand()%50 + 1;
-  //printf("%d", randomNumber);
-  for(int i = 0; i < 5; i++){
-    for(int j = 0; j < 5; j++){
-      table[i][j] = rand() % 50 + 1;
-      printf("%5d", table[i][j]);
-    }printf("\n");
-  }
-  
-  
-  
   return 0;
 }

@@ -13,8 +13,11 @@ float circleRound(int radius);
 float circleArea(int radius);
 
 //사각형
+//반환타입 none 매개변수 int
 void squareRound(int height, int width);
-int squareArea(void);
+//사각형의 넓이
+//반환타입 : int , 매개변수 : none
+int squareArea();
 
 void devider(void);
 
@@ -26,7 +29,11 @@ int main(){
   float circleAreaResult = circleArea(5);
   printf("원의 넓이 : %f\n", circleAreaResult);
   devider();
-  
+  squareRound(5,4);
+  devider();
+  squareArea();
+  devider();
+
   
   
   return 0;
@@ -39,8 +46,26 @@ float circleRound(int radius){
 float circleArea(int radius){
  return radius * radius * PI; 
 }
+void squareRound(int height, int width){
+  int result = (height + width) * 2;
+  printf("사각형의 둘레 : %d\n", result);
+  //return 구문이 불필요 반환타입이 void이기 때문
+}
+
+int squareArea(){
+  int inputHeight = 0;
+  int inputWidth = 0;
+  printf("height input : ");
+  scanf("%d", &inputHeight);
+  printf("width input : ");
+  scanf("%d", &inputWidth);
+
+  int result = inputHeight * inputWidth;
+  printf("사각형의 넓이 : %d\n", result);
+  return result;
 
 
+}
 
 void devider(){
   printf("======================\n");

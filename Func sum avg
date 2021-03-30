@@ -3,7 +3,7 @@
 //평균을 구하는 함수
 int sum(int scores[], int size);
 int average(int scores[], int size);
-
+ 
 int main(){
   
   int scores[10] = {95,23,65,77,39,26,54,12,9,34};
