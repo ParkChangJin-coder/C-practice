@@ -1,0 +1,54 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <math.h>
+
+/*
+void increase(int arr[], int size){
+  for ( int i = 0; i < size; i++){
+    //arr[i] += 1;
+    *(arr + i) += 1;
+  }
+}
+*/
+//배열 2개를 만들고 인덱스 비교
+//큰 수 출력
+void findMaxData(int* numbers1, int* numbers2, int* result){
+  
+}
+void insertRandomData(int* arr, int size){
+  for(int i = 0; i < size; i++){
+    
+  }
+}
+
+int main(){
+  /*
+  int numbers[3] = {1,2,3};
+  printf("array name : %d\n", numbers);
+  printf("array[0] value : %d\n", numbers[0]);
+  printf("array[0] adress : %d\n", &numbers[0]);
+  
+  printf("array[1] adress : %d\n", &numbers[1]);
+  printf("numbers + 0 : %d\n", *(numbers + 0));
+  printf("numbers + 0(1) : %d\n", *numbers + 0);
+  
+  
+  int numbers[10] = {0, };
+  for (int i = 0; i < 10; i++){
+    printf("%4d", numbers[i]);
+  }
+  printf("\n");
+  increase(numbers, 10);
+  for(int i = 0; i < 10; i++){
+    printf("%4d", numbers[i]);
+  }
+  printf("\n");
+  */
+  
+  srand(time(NULL));
+  int numbers1[10] = {0, };
+  int numbers2[10] = {0, };
+  
+  return 0;
+}

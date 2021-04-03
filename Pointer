@@ -1,0 +1,52 @@
+#include <stdio.h>
+
+void increase(int target, int value){
+  target += value;
+}
+
+void increasePointer(int* target, int value){
+  *target += value;
+  
+}
+int main(){
+  //-------------------------
+  //int num1 = 10;
+  //printf("%d\n", num1);
+  //printf("%d\n", &num1);
+  //주소값 : &
+  
+  int target = 10;
+  printf("target : %d\n", target);
+  increasePointer(&target, 5);
+  printf("target : %d\n", target);
+  printf("target adress : %d\n", &target);
+  
+  //포인터 변수 = 주소값
+  // *로 주소 포인트
+  //int* Pnum1 = &target;
+  //printf("Pnum adress : %d\n", Pnum1);
+  //printf("target adress : %d\n", &target);
+
+  
+  return 0;
+}
+
+#include <stdio.h>
+int main(){
+  int num1 = 10;
+  int* pnum1;
+  double* pdouble;
+  float* pfloat;
+  char* pchar;
+  printf("size of int : %d\n", sizeof(pnum1));
+  printf("size of double : %d\n", sizeof(pdouble));
+  printf("size of float : %d\n", sizeof(pfloat));
+  printf("size of char : %d\n", sizeof(pchar));
+  
+  //포인터 변수를 사용할 때는 같은 변수의 타입과
+  //동일하게 맞추어야 한다.
+  
+  
+  
+  return 0;
+}
