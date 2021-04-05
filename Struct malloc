@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+typedef struct student{
+  char name[50];
+  int id;
+}student;
+
+int main(){
+  printf("student struct size :  %lu\n", sizeof(student));
+  
+  student* s1 = (student*)malloc(sizeof(student));
+  if(s1 == NULL){
+    printf("fail!");
+    return 0;
+  }
+  s1->id = 10;
+  strcpy(s1->name, "kim");
+  printf("%d, %s\n", s1->id, s1->name);
+  
+  free(s1);
+  
+  
+  return 0;
+}

@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+  
+  int size = 10;
+  int* parr = (int*)malloc(sizeof(int)*size);
+  if (parr == NULL){
+    printf("fail!!\n");
+    return 0;
+  }
+  
+  for (int i = 0; i< size; i++){
+    *(parr + i) = 1 + i;
+    //parr[i] = 1 + 1;
+  }
+  
+  for (int i = 0; i < size; i++){
+    printf("*(parr%d)의 값 : %d\n", i, *(parr + i));
+  }
+  free(parr);
+  
+  return 0;
+}

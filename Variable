@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+//전역변수
+int count = 0;
+
+void printA(){
+  printf("Hello\n");
+  count++;
+}
+void printB(){
+  printf("world!\n");
+  count++;
+}
+
+void printC(){
+  //정적 변수
+  static int count_C = 0;
+  printf("Good!:: count : %d\n", count_C);
+  count_C++;
+}
+
+int main(){
+ printB();
+ printA();
+ printB();
+ printA();
+ printf("%d\n", count);
+ 
+ printC();
+ printC();
+ 
+ 
+ 
+ //지역변수
+ int num = 10;
+  
+  
+  return 0;
+}

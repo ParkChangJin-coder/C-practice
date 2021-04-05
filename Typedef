@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+typedef struct {
+  char name[50];
+  double height;
+  int num;
+}student;
+
+void editheight(student* s, double height){
+  //(*s).height = height;
+  s->height = height;
+}
+
+//별명을 붙여주는 기능
+//typedef (뼐명을 붙여주는 대상) (별명)
+typedef struct student student;
+
+//strunc 안에 typedef
+typedef struct {
+  int x;
+  int y;
+}point;
+
+typedef struct {
+  point center;
+  int radius;
+} circle;
+
+
+int main(){
+  
+  student s1 = {"kim", 185, 1};
+  editheight(&s1, 175.5);
+  return 0;
+}

@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//매크로 상수
+#define MAX_SIZE 10
+#define _CAT_SECURE_NO_WARNINGS
+
+int main(){
+  /*
+  //변수 -> 상수
+  int num1 = 10;
+  const int num2 = 10; // 상수
+  
+  //connst int num3; (X)
+  int a, b, c = 0;
+  int a;
+  int b;
+  int c;
+  */
+  
+  /*
+  char input = 0;
+  printf("input char : ");
+  scanf("%c", &input);
+  
+  
+  printf("input char == %c\n", input);
+  */
+  
+  /*
+  //using getchar()
+  //using putchar()
+  //문자 하나 입, 출력
+  char input = 0;
+  printf("input char : ");
+  input = getchar();
+  printf("input char == %c\n", input);
+  putchar(input);
+  */
+  char inputs[100];
+  printf("input chars : ");
+  gets(inputs);
+  printf("inputs chars == %s\n", inputs);
+  puts(inputs);
+  return 0;
+}
